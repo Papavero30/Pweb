@@ -1,0 +1,64 @@
+  
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('608.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    h1 {
+        font-family: "Press Start 2p";
+        text-align: center;
+        color: #333;
+    }
+
+    .routine {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .skin-type {
+        display: flex;
+        align-items: center;
+        background-color: #f7f7f7;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .skin-type img {
+        max-width: 100px;
+        margin-right: 20px;
+    }
+
+    .skin-type h2 {
+        color: #555;
+    }
+
+    .care-instructions {
+        margin-left: 20px;
+    }
+
+    .problem-skin {
+        display: flex;
+        align-items: center;
+        background-color: #f7f7f7;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .problem-skin img {
+        max-width: 100px;
+        margin-right: 20px;
+    }
+
+    .problem-skin h2 {
+        color: #555;
+    }
+
+    .product-recommendation {
+        margin-left: 20px;
+    }
