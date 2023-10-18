@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const apiUrl = "http://it-its.id/api/movies";
-    const movieContainer = document.querySelector(".row");
+    const movieContainer = document.getElementById("movieList");
 
     fetch(apiUrl)
         .then((response) => response.json())
@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 const movieElement = document.createElement("div");
                 movieElement.className = "col-6";
                 movieElement.innerHTML = `
-          <div class="mt-4 p-5 jumbotron-custom">
-              <p>${movieData.Plot}</p>
-
-          </div>
+            <div class="mt-4 p-5 jumbotron-custom">
+            <h2>${movieData.Title}</h2>
+            <p>${movieData.Plot}</p>
+        </div>
         `;
                 movieContainer.appendChild(movieElement);
             });
