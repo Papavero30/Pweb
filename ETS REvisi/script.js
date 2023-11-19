@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Fetch data from API
     fetch('https://api-berita-indonesia.vercel.app/antara/politik/')
         .then(response => response.json())
         .then(data => {
             const cardContainer = document.querySelector('.card-container');
 
-            // Loop through posts and create cards
             data.data.posts.forEach(post => {
                 const card = document.createElement('div');
                 card.classList.add('col-md-4', 'card');
